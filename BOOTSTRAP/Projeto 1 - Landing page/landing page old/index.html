@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rumo a marte - OnebitX</title>
+    <link
+      rel="shortcut icon"
+      href="./imagens/FAVICON-SPACEX.png"
+      type="image/x-icon"
+    />
+    <!-- Css Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      .bg-image {
+        background-image: url(./imagens/backgroundLp.png);
+        height: 100vh;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body class="bg-image py-5">
+    <div class="container">
+      <div class="card bg-dark mx-auto" style="width: 30rem">
+        <img
+          src="./imagens/logoOneBitDark.png"
+          class="card-img-top mx-auto pt-4"
+          alt="logo-onebitcode"
+          style="width: 200px"
+        />
+        <div class="card-body">
+          <p class="paragraph text-light">1 - Qual seu nome?</p>
+          <div class="input-group mt-3">
+            <span class="input-group-text" id="basic-addon1"
+              >Primeiro Nome:</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              aria-label="input"
+              placeholder="Digite aqui:"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <div class="input-group mt-3">
+            <span class="input-group-text" id="basic-addon1"
+              >Segundo Nome:</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Digite aqui:"
+              aria-label="input"
+              aria-describedby="input"
+            />
+          </div>
+          <p class="paragraph text-light mt-3">2 - Qual o seu gênero?</p>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">
+            <label class="form-check-label text-light" for="radio1">Homem</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+            <label class="form-check-label text-light" for="radio2">Mulher</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">
+            <label class="form-check-label text-light" for="radio3">Prefiro não informar</label>
+          </div>
+
+          <p class="paragraph text-light mt-3">3 - Marque os treinamentos que você fez:</p>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label text-light" for="flexSwitchCheckDefault">Treinamento básico de astronauta</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label text-light" for="flexSwitchCheckDefault">Treinamento físico básico</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label text-light" for="flexSwitchCheckDefault">Treinamento avançado de astronauta</label>
+          </div>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label text-light" for="flexSwitchCheckDefault">Treinamento físico intenso</label>
+          </div>
+
+          <p class="paragraph text-light mt-3">4 - Quais você acha que são suas qualidades?</p>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+            <label class="form-check-label text-light">Proativo</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+            <label class="form-check-label text-light">Resistente</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+            <label class="form-check-label text-light">Não vomito fácil</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+            <label class="form-check-label text-light">Não temo marciano</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+            <label class="form-check-label text-light">Já vi todos os star wars</label>
+          </div>
+          <div class="container-btn mt-4 text-center">
+            <button type="button" class="btn btn-outline-danger">Enviar</button>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p class="paragraph text-light mt-3 text-center">Feito por Caio Santos - todos os direitos reservados - 2022</p>
+      </footer>
+    </div>
+
+    <!-- Script Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
