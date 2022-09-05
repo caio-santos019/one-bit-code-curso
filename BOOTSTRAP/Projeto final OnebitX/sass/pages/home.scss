@@ -1,0 +1,48 @@
+@mixin text-style($width, $margin-bottom) {
+  width: $width;
+  margin-bottom: $margin-bottom;
+}
+.container00 {
+  &.container01 {
+    background-image: url(../images/home/01.jpg);
+  }
+  &.container02 {
+    background-image: url(../images/home/03.jpg);
+  }
+  &.container03 {
+    background-image: url(../images/home/02.gif);
+  }
+  &.container04 {
+    background-image: url(../images/home/04.jpg);
+  }
+}
+
+.titlePadding {
+  padding-top: 200px;
+}
+
+.shortTitle {
+  @include text-style(550px, $title-margin-bottom);
+}
+.mediumTitle {
+  @include text-style(650px, $title-margin-bottom);
+}
+
+@media (max-width: 750px) {
+  .titlePadding {
+    padding-top: 120px;
+  }
+
+  .shortTitle,
+  .mediumTitle {
+    width: auto;
+    font-size: 50px;
+  }
+}
+@media (max-width: 380px) {
+  .shortTitle,
+  .mediumTitle {
+    width: auto;
+    font-size: 40px;
+  }
+}
