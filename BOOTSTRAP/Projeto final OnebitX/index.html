@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <!-- Lib Text css -->
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Favicon -->
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
 
@@ -28,7 +28,7 @@
         <header class="header">
           <nav class="navbar navbar-expand-lg navbar-dark bg-transparent pt-4">
             <div class="container-fluid">
-              <a href="/Projeto final OnebitX/index.html">
+              <a href="./index.html">
                 <img
                   src="./images/logo-obc-2021-darkbg.png"
                   alt="logoOBX"
@@ -52,7 +52,7 @@
                     <a
                       class="nav-link active"
                       aria-current="page"
-                      href="/Projeto final OnebitX/falcon9.html"
+                      href="./falcon9.html"
                       id="navItem"
                       >FALCON 9</a
                     >
@@ -60,7 +60,7 @@
                   <li class="nav-item">
                     <a
                       class="nav-link active"
-                      href="/Projeto final OnebitX/humanSpace.html"
+                      href="./humanSpace.html"
                       id="navItem"
                       >HUMAN SPACE FLIGHT</a
                     >
@@ -72,7 +72,11 @@
         </header>
       </div>
 
-      <div class="container titlePadding">
+      <div
+        class="container titlePadding"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <p class="h5" id="launchComing">LANÇAMENTO A CAMINHO</p>
         <p class="h1 mediumTitle">MISSÃO EQUIPE-3</p>
         <button type="button" class="btn btn-outline-light mt-5" id="button">
@@ -80,17 +84,22 @@
         </button>
 
         <div class="container text-center">
-          <img
-            src="./images/home/arrowDown.gif"
-            alt="arrowDown"
-            class="arrowDown"
-          />
+          <a href="#ScrollDown">
+            <img
+              src="./images/home/arrowDown.gif"
+              alt="arrowDown"
+              class="arrowDown"
+          /></a>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid container00 container02">
-      <div class="container titlePadding">
+    <div class="container-fluid container00 container02" id="ScrollDown">
+      <div
+        class="container titlePadding"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
         <p class="h5" id="launchComing">MISSÃO CONCLUÍDA</p>
         <p class="h1 shortTitle">MISSÃO EQUIPE-2 RETORNOU PARA A TERRA</p>
         <button type="button" class="btn btn-outline-light mt-5" id="button">
@@ -100,7 +109,11 @@
     </div>
 
     <div class="container-fluid container00 container03">
-      <div class="container titlePadding">
+      <div
+        class="container titlePadding"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
         <p class="h5" id="launchComing">MISSÃO CONCLUÍDA</p>
         <p class="h1 shortTitle">DRAGON RETORNOU PARA A TERRA</p>
         <button type="button" class="btn btn-outline-light mt-5" id="button">
@@ -110,7 +123,11 @@
     </div>
 
     <div class="container-fluid container00 container04">
-      <div class="container titlePadding">
+      <div
+        class="container titlePadding"
+        data-aos="fade-down-right"
+        data-aos-duration="1500"
+      >
         <p class="h1 mediumTitle">STARSHIP POUSA ASTRONAUTAS DA NASA NA LUA</p>
         <button type="button" class="btn btn-outline-light mt-5" id="button">
           SAIBA MAIS
@@ -142,5 +159,9 @@
       crossorigin="anonymous"
     ></script>
     <!-- Lib text script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

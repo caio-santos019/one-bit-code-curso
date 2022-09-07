@@ -22,10 +22,10 @@
 }
 
 .shortTitle {
-  @include text-style(550px, $title-margin-bottom);
+  @include text-style(550px, 25px);
 }
 .mediumTitle {
-  @include text-style(650px, $title-margin-bottom);
+  @include text-style(650px, 25px);
 }
 
 @media (max-width: 750px) {
